@@ -107,6 +107,7 @@ int main()
 
     WritePoints("out.xyz" ,  n_supervoxel , points , labels );
 
-    delete labels;
+    delete[] labels;
+    delete[] points_ptr;
     return 0;
 }
